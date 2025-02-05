@@ -1,9 +1,9 @@
 // ヘッダ
-fetch("/header.html")
+fetch("/mako-hp/header.html")
     .then((response) => response.text())
     .then((data) => document.querySelector("#header").innerHTML = data);
 
 // フッタ
-fetch("/footer.html")
+fetch("/mako-hp/footer.html")
     .then((response) => response.text())
     .then((data) => document.querySelector("#footer").innerHTML = data);
