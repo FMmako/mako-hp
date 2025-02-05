@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-	<title>ア-研</title>
+<html>
+    <head>
+        <meta charset="utf-8">  <!--文書の文字コード-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--端末の画面の幅に合わせる。Webページが表示される倍率は1-->
+        <title>index</title>  <!--ページのタイトル-->
+        <link rel="stylesheet" href="/style.css">
+    </head> 
 
-</head>
-<body>
-	<p>あ</p>
-</body>
+    <body>
+        <div id="header"></div>
 
+        <main>
+            <section class="main_visual">
+                <div class="tab-wrap">
+                    <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" />
+                    <label class="tab-label" for="TAB-01">ボタン 1</label>
+                        <div class="tab-content">
+                            コンテンツ 1
+                        </div>
+                    <input id="TAB-02" type="radio" name="TAB" class="tab-switch" />
+                    <label class="tab-label" for="TAB-02">ボタン 2</label>
+                        <div class="tab-content">
+                            コンテンツ 2
+                        </div>
+                    <input id="TAB-03" type="radio" name="TAB" class="tab-switch" />
+                    <label class="tab-label" for="TAB-03">ボタン 3</label>
+                        <div class="tab-content">
+                            コンテンツ 3
+                        </div>
+                </div>
+            </section>
+        </main>
 
+        <div id="footer"></div>
+    <script src="/load_common.js"></script>
+    </body>
 </html>
