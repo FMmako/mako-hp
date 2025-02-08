@@ -1,0 +1,105 @@
+body{
+    font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 12px;
+    background-color: white;
+  }
+
+header{
+    position: sticky; /* ここに注目! */
+    top: 0;
+    height: 200px;
+    width: 450px;
+    color: white;
+    background-color: skyblue;
+    padding-inline: 10px;
+    align-content: center;
+}
+
+nav{
+  unicode-bidi: isolate;
+  display: flex;
+  justify-content:space-around;
+}
+
+a{
+  text-decoration: none;
+}
+:root {
+  --hdr_1: 30px;
+}
+
+.hdr_logo{
+  background-color: pink;
+  float: left;
+  height: var(--hdr_1);
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top_icon{
+  height: 20px;
+  width: auto;
+  display: flex;
+}
+
+.hdr_bar{
+  background-color: blue;
+}
+
+.hdr_link{
+  background-color: rgb(120, 188, 32);
+  float: right;
+  width: auto;
+  height: var(--hdr_1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hdr_link_solo{
+  padding: 0em 2em;
+  margin: 2px;
+  font-weight: bold;
+  color: #000000;/*文字色*/
+  background: #ffffff;
+  border: solid 3px #16ce47;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+.hdr_nav{
+  color: aliceblue;
+  display: inline-block;
+  width: 100%;
+}
+
+.hdr_nav_solo{
+  padding: 0.5em 3em;
+  margin: 2em 0;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/ 
+}
+
+.ftr_sns{
+  background-color: rgb(61, 202, 218);
+  float: right;
+  width: auto;
+  height: var(--hdr_1);
+  display: flex;
+  justify-content: flex-end;
+}
+.ftr_sns_solo{
+  color: #000000;/*文字色*/
+  background: #ffffff00;
+  max-height: var(--hdr_1);
+  padding: 5px;
+  margin: 0px;
+}
+.sns_icon{
+  height: 20px;
+  width: auto;
+  display: block;
+}
