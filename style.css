@@ -15,7 +15,6 @@ header{
     align-content: center;
 }
 
-
 nav{
   unicode-bidi: isolate;
   display: flex;
@@ -45,7 +44,10 @@ a{
 }
 
 .hdr_bar{
-  background-color: blue;
+  background-color:palegoldenrod;
+  width: 100%;
+  height: 15px;
+  display: inline-block;
 }
 
 .hdr_link{
