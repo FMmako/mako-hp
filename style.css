@@ -7,12 +7,13 @@ body{
 header{
     position: sticky; /* ここに注目! */
     top: 0;
-    height: 200px;
-    width: 450px;
+    height: auto;
+    min-width: 450px;
     color: white;
     background-color: skyblue;
     padding-inline: 10px;
     align-content: center;
+    padding: 5px;
 }
 
 nav{
@@ -72,13 +73,14 @@ a{
 
 .hdr_nav{
   color: aliceblue;
+  background-color: rebeccapurple;
   display: inline-block;
   width: 100%;
 }
 
 .hdr_nav_solo{
   padding: 0.5em 3em;
-  margin: 2em 0;
+  margin: 0em 0;
   font-weight: bold;
   color: #6091d3;/*文字色*/
   background: #FFF;
