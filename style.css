@@ -67,8 +67,8 @@ a{
   font-weight: bold;
   color: #000000;/*文字色*/
   background: #ffffff;
-  border: solid 3px #16ce47;/*線*/
-  border-radius: 10px;/*角の丸み*/
+  border: solid 2px #16ce47;/*線*/
+  border-radius: 5px;/*角の丸み*/
 }
 
 .hdr_nav{
@@ -80,16 +80,15 @@ a{
 
 .hdr_nav_solo{
   padding: 0.5em;
-  margin: 0em 0;
-  width: auto;
-  min-width: 60px;
+  margin: 2px;
+  width: 15vw;
   display: inline-block;
   text-align: center;
   font-weight: bold;
   color: #6091d3;/*文字色*/
   background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/ 
+  border: solid 2px #6091d3;/*線*/
+  border-radius: 5px;/*角の丸み*/ 
 }
 
 footer{
