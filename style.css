@@ -122,9 +122,9 @@ img{
     left: 0;
     width: 100%;
     visibility: hidden;/*visible 見える hidden 見えない*/ 
-    /*transition:  visibility 1s ease;
+    transition:  visibility 1s ease;
     animation: fade-out 0.5s;
-    animation-fill-mode: forwards; */ 
+    animation-fill-mode: forwards; 
   }  
   .hdr-sub_visible{
     visibility: visible;/*visible 見える hidden 見えない*/
