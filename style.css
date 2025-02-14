@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html{
@@ -7,7 +9,12 @@ html{
   font-weight:400;
   font-size: 16px;
   color: #222;
-  background-color: rgb(235, 0, 0);
+  background-color: rgb(194, 151, 151);
+  min-width:320px;
+}
+
+main{
+  margin-top:  300px;
 }
 
 a {
@@ -47,15 +54,15 @@ img{
 
   .hdr-main{
     box-sizing: border-box;
-    background-color: rgba(204, 157, 37, 0.542);
+    background-color: rgb(110, 145, 104);
     display: block;
     height: inherit;
   }
     .hdr-main-wrapper{
-      display: flex;
+      display:flex;
       justify-content:space-between;
       align-items: center;
-      height: inherit;
+      height: var(--hdr_height);
     }
 
       .hdr-logo .hdr-logo_link{
@@ -67,48 +74,70 @@ img{
           max-height: 80px;
         }
 
-
-
-  .hdr-nav-wrapper {
-    justify-content:space-between;
-    align-items: center;
-    height: inherit;
-    width: 50%;
-  }
-    .hdr-menu-sp {
-
-    }
-
-    .hdr-menu-pc {
-
-    }
-      .hdr-menu-list-pc {
-
+      .hdr-nav-wrapper {
+        background-color: rgb(131, 159, 116);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        height: inherit;
+        width: 60%;
       }
-        .hdr-menu-item-pc {
-        }
-        .hdr-menu-button {
-
+        .hdr-menu-sp {
+          display: none;
         }
 
+        .hdr-menu-pc/*nav*/ {
+          background-color: rgba(0, 0, 255, 0.365);
+          width: 100%;
+
+        }
+          .hdr-menu-list-pc/*ul*/ {
+            background-color: aquamarine; 
+            display: flex;
+            justify-content: space-around;
+          }
+            .hdr-menu-item-pc/*li*/ {
+              display: inline-block;          
+            }
+            .hdr-menu-button/*button*/{
+              border: none;
+              cursor: pointer;
+              color: #222;
+              font-size: 20px;
+              height: 40px;
+            }
+
+            .hdr-menu-button:hover{
+              color: aqua;
+            }
 
 
-
-
-
-  
+            
 
 
 
 
   .hdr-sub {
-    background-color: rgba(250, 235, 215, 0.617);
+    background-color: rgba(250, 235, 215, 0.264);
     position: absolute;
     top:var(--hdr_height);
     left: 0;
     width: 100%;
-    visibility: visible;/*visible 見える hidden 見えない*/
+    visibility: hidden;/*visible 見える hidden 見えない*/
   }
+  .C{
+    visibility: visible;/*visible 見える hidden 見えない*/
+    animation: fade-in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
   .hdr-sub1 {}
   .hdr-sub1-contents {}
   .hdr-sub1-link {}
