@@ -121,7 +121,7 @@ img{
     top:var(--hdr_height);
     left: 0;
     width: 100%;
-    visibility: visible;/*hidden;/*visible 見える hidden 見えない*/ 
+    visibility: hidden;/*visible 見える hidden 見えない*/ 
     transition:  visibility 1s ease;
     animation: fade-out 0.5s;
     animation-fill-mode: forwards;
