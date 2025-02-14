@@ -6,7 +6,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="/test.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--端末の画面の幅に合わせる。Webページが表示される倍率は1-->
         <link rel="stylesheet" href="/mako-hp/style.css">
     </head> 
@@ -24,10 +25,9 @@
               </p>
             <div class="hdr-nav-wrapper">
               <div class="hdr-menu-sp">
-
                 <!--スマホメニュー-->
               </div>
-              <div class="hdr-menu-pc">
+              <nav class="hdr-menu-pc">
                 <!--pcメニュー-->
                 <ul class="hdr-menu-list-pc">
 
@@ -62,40 +62,43 @@
                       </div>
                     </div>
                   </li>
-                  <li class="hdr-menu-item-pc">
-                    <button type="button" class="hdr-menu-button">main1</button>
-                    <div class="hdr-sub">
-                      <div class="hdr-sub1">
-                        <p class="hdr-sub1-titel">メニュー</p>
-                        <div class="hdr-sub1-menu">
-                          <ul class="hdr-sub1-nav">
-                            <li class="hdr-sub1-contents">
-                              <a class="hdr-sub1-link" href="#" title="#">sub1</a>
-                            </li>
-                            <li class="hdr-sub1-contents">
-                              <a class="hdr-sub1-link" href="#" title="#">sub2</a>
-                            </li>
-                          </ul>
-                        </div>
 
-                    </div>
-                    <div class="hdr-sub2">
-                      <p class="hdr-sub2-titel">コンテンツ</p>
-                      <div class="hdr-sub2-menu">
-                        <ul class="hdr-sub2-nav">
-                          <li class="hdr-sub2-contents">
-                            <a class="hdr-sub2-link" href="#" title="#">con1</a>
+                <!--デバッグでボタン追加-->
+                <li class="hdr-menu-item-pc">
+                  <button type="button" class="hdr-menu-button">main1</button>
+                  <div class="hdr-sub">
+                    <div class="hdr-sub1">
+                      <p class="hdr-sub1-titel">メニュー</p>
+                      <div class="hdr-sub1-menu">
+                        <ul class="hdr-sub1-nav">
+                          <li class="hdr-sub1-contents">
+                            <a class="hdr-sub1-link" href="#" title="#">sub1</a>
                           </li>
-                          <li class="hdr-sub2-contents">
-                            <a class="hdr-sub2-link" href="#" title="#">con2</a>
+                          <li class="hdr-sub1-contents">
+                            <a class="hdr-sub1-link" href="#" title="#">sub2</a>
                           </li>
                         </ul>
                       </div>
+                
+                  </div>
+                  <div class="hdr-sub2">
+                    <p class="hdr-sub2-titel">コンテンツ</p>
+                    <div class="hdr-sub2-menu">
+                      <ul class="hdr-sub2-nav">
+                        <li class="hdr-sub2-contents">
+                          <a class="hdr-sub2-link" href="#" title="#">con1</a>
+                        </li>
+                        <li class="hdr-sub2-contents">
+                          <a class="hdr-sub2-link" href="#" title="#">con2</a>
+                        </li>
+                      </ul>
                     </div>
-                  </li>
+                  </div>
+                </li>
+                <!---->
 
                 </ul>
-              </div>
+              </nav>
               
               
             </div>
@@ -103,11 +106,8 @@
 
 
           </div>
+          
         </header>
-
-
-
-
 
     </body>
 </html>
